@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Confirm Example</title>
+</head>
+<body>
+	<h1>Contoh Program Confirm</h1>
+
+	<script>
+		let counter = 0;
+		let userConfirm = true;
+
+		while (userConfirm) {
+			userConfirm = confirm('Apakah Anda mau mengulang?');
+			if (userConfirm) {
+				counter++;
+			}
+		}
+
+		alert(`Perulangan sudah dilakukan sebanyak ${counter} kali`);
+	</script>
+</body>
+</html>

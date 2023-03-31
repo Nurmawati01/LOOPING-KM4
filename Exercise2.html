@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For Loop Example</title>
+</head>
+<body>
+	<h1>Penambahan Nilai:</h1>
+	<ul id="nilai-list"></ul>
+	
+	<script>
+		let nilai = 0;
+		for (let i = 1; i <= 10; i++) {
+			nilai += 2;
+			let nilaiText = `Nilai setelah pengulangan ke-${i}: ${nilai}`;
+			let li = document.createElement('li');
+			let textNode = document.createTextNode(nilaiText);
+			li.appendChild(textNode);
+			document.getElementById('nilai-list').appendChild(li);
+		}
+	</script>
+</body>
+</html>

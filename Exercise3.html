@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For Loop Example</title>
+</head>
+<body>
+	<h1>Cek Nilai Ganjil atau Genap:</h1>
+	<ul id="nilai-list"></ul>
+	
+	<script>
+		for (let i = 0; i <= 20; i++) {
+			let nilaiText = `${i} adalah `;
+			if (i % 2 === 0) {
+				nilaiText += 'genap';
+			} else {
+				nilaiText += 'ganjil';
+			}
+			let li = document.createElement('li');
+			let textNode = document.createTextNode(nilaiText);
+			li.appendChild(textNode);
+			document.getElementById('nilai-list').appendChild(li);
+		}
+	</script>
+</body>
+</html>

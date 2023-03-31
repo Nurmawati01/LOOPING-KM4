@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Looping Example</title>
+</head>
+<body>
+	<h1>List of Users</h1>
+	<ul id="userList"></ul>
+
+	<script>
+		for (let i = 1; i <= 100; i++) {
+			let li = document.createElement("li");
+			let text = document.createTextNode(`User ke - ${i}`);
+			li.appendChild(text);
+			document.getElementById("userList").appendChild(li);
+		}
+	</script>
+</body>
+</html>
